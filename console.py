@@ -54,7 +54,7 @@ class HBNBCommand(cmd.Cmd):
             my_model = eval(arg + "()")
             my_model.save()
             print(my_model.id)
-        except:
+        except Exception:
             print("** class doesn't exist **")
 
     def do_show(self, arg):
@@ -65,7 +65,7 @@ class HBNBCommand(cmd.Cmd):
             return None
         try:
             eval(cmd_argv[0])
-        except:
+        except Exception:
             print("** class doesn't exist **")
             return None
 
@@ -90,7 +90,7 @@ class HBNBCommand(cmd.Cmd):
         if cmd_argv:
             try:
                 eval(cmd_argv[0])
-            except:
+            except Exception:
                 print("** class doesn't exist **")
                 return None
 
@@ -124,7 +124,7 @@ class HBNBCommand(cmd.Cmd):
             return None
         try:
             eval(cmd_argv[0])
-        except:
+        except Exception:
             print("** class doesn't exist **")
             return None
 
@@ -190,7 +190,7 @@ class HBNBCommand(cmd.Cmd):
 
         try:
             eval(cmd_argv[0])
-        except:
+        except Exception:
             print("** class doesn't exist **")
             return None
 
@@ -209,7 +209,7 @@ class HBNBCommand(cmd.Cmd):
                         type_att = getattr(all_objs[key], cmd_argv[i], "")
                         try:
                             cast_val = type(type_att)(cmd_argv[i + 1])
-                        except:
+                        except Exception:
                             cast_val = type_att
                         setattr(all_objs[key], cmd_argv[i], cast_val)
                         all_objs[key].save()
@@ -229,7 +229,7 @@ class HBNBCommand(cmd.Cmd):
         if cmd_argv:
             try:
                 eval(cmd_argv[0])
-            except:
+            except Exception:
                 print("** class doesn't exist **")
                 return None
 
