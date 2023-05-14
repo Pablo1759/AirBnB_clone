@@ -40,7 +40,7 @@ class Test_help(unittest.TestCase):
         """ Set up for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
         FileStorage._FileStorage__objects = {}
 
@@ -48,7 +48,7 @@ class Test_help(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_help_help(self):
@@ -135,7 +135,7 @@ class Test_create(unittest.TestCase):
         """ Set up for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
         FileStorage._FileStorage__objects = {}
 
@@ -143,7 +143,7 @@ class Test_create(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_create_no_class(self):
@@ -182,7 +182,7 @@ class Test_destroy(unittest.TestCase):
         """ Set up for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
         FileStorage._FileStorage__objects = {}
 
@@ -190,7 +190,7 @@ class Test_destroy(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_destroy_no_class(self):
@@ -301,7 +301,7 @@ class Test_show(unittest.TestCase):
         """ Set up for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
         FileStorage._FileStorage__objects = {}
 
@@ -309,7 +309,7 @@ class Test_show(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_show_no_arg(self):
@@ -429,7 +429,7 @@ class Test_all(unittest.TestCase):
         """ Set up for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
         FileStorage._FileStorage__objects = {}
 
@@ -437,7 +437,7 @@ class Test_all(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_update_no_existent_class(self):
@@ -525,7 +525,7 @@ class Test_update(unittest.TestCase):
         """ Set up for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
         FileStorage._FileStorage__objects = {}
 
@@ -533,7 +533,7 @@ class Test_update(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_update_no_class(self):
@@ -819,7 +819,7 @@ class Test_count(unittest.TestCase):
         """ Set up for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
         FileStorage._FileStorage__objects = {}
 
@@ -827,5 +827,5 @@ class Test_count(unittest.TestCase):
         """ Tear down for all methods """
         try:
             remove("file.json")
-        except:
+        except Exception:
             pass
