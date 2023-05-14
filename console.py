@@ -70,10 +70,9 @@ class HBNBCommand(cmd.Cmd):
             return None
 
         all_objs = storage.all()
-
         if len(cmd_argv) < 2:
-                print("** instance id missing **")
-                return None
+            print("** instance id missing **")
+            return None
 
         cmd_argv[1] = cmd_argv[1].replace("\"", "")
         key = cmd_argv[0] + '.' + cmd_argv[1]
@@ -131,8 +130,8 @@ class HBNBCommand(cmd.Cmd):
         all_objs = storage.all()
 
         if len(cmd_argv) < 2:
-                print("** instance id missing **")
-                return None
+            print("** instance id missing **")
+            return None
 
         cmd_argv[1] = cmd_argv[1].replace("\"", "")
         key = cmd_argv[0] + '.' + cmd_argv[1]
@@ -248,3 +247,4 @@ class HBNBCommand(cmd.Cmd):
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
+
